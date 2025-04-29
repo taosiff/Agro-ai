@@ -1,0 +1,25 @@
+# Virtual environments
+venv/
+.env/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# Binaries
+*.dll
+*.so
+*.dylib
+
+# Logs and data
+*.log
+*.csv
+*.tsv
