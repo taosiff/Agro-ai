@@ -1,0 +1,50 @@
+feature_columns:
+  crop_yield:
+  - temperature
+  - rainfall
+  - humidity
+  - wind_speed
+  - Avg_Temperature_C
+  - Annual_Rainfall_mm
+  - AQI
+  - Forest_Cover_Percent
+  - Drought_Severity
+  demand_forecast:
+  - temperature
+  - rainfall
+  - humidity
+  - wind_speed
+  - Avg_Temperature_C
+  - Annual_Rainfall_mm
+  - AQI
+  - Forest_Cover_Percent
+  - Drought_Severity
+  - Agricultural_Yield_ton_per_hectare
+  - month
+  - day_of_week
+  - is_weekend
+  - is_rainy_season
+  - is_harvest_season
+  flood:
+  - rainfall
+  - temperature
+  - humidity
+  - wind_speed
+  - River_Water_Level_m
+  - Annual_Rainfall_mm
+  rainfall:
+  - temperature
+  - humidity
+  - wind_speed
+  - Avg_Temperature_C
+  - Annual_Rainfall_mm
+models:
+  crop_yield: models/crop_yield_model.joblib
+  demand_forecast: models/demand_forecast_model.joblib
+  flood: models/flood_model.joblib
+  rainfall: models/rainfall_model.joblib
+scalers:
+  crop_yield: models/crop_yield_scaler.joblib
+  demand_forecast: models/demand_forecast_scaler.joblib
+  flood: models/flood_scaler.joblib
+  rainfall: models/rainfall_scaler.joblib
